@@ -34,8 +34,11 @@ jQuery(document).ready(function($){
     else if(opsi=="x") {
         total = ynumber1*ynumber2;
     }
-    else {
+    else if(opsi==":"){
         total = ynumber1/ynumber2;
+    }
+    else{
+        total = ynumber1%ynumber2;
     }
     
      $("#ytotal").val(total);
@@ -54,8 +57,10 @@ jQuery(document).ready(function($){
     else if(opsi=="x") {
         total = ynumber1*ynumber2;
     }
-    else {
+    else if(opsi==":"){
         total = ynumber1/ynumber2;
+    }else{
+        total = ynumber1%ynumber2;
     }
     
      $("#ytotal").val(total);
